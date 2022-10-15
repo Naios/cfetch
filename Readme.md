@@ -97,23 +97,41 @@ You would call: `cmake -S Project -B Project/build -DCMAKE_MODULE_PATH="CFetchDi
 Provides header-only dependencies without any compilation involved:
 
 **cfetch_header_dependency**(
-     "**author/projectname@revision_or_hash**"
+
+​     "**author/projectname@revision_or_hash**"
+
 ​    [**INSTALL**] # Re-Install the dependency as part of the project's install
+
 ​    [**EXPORT**] # Provide an importable target in the project's install.
+
 ​    [**NO_LICENSE_FILE**] # The project does not provide a license file
+
 ​    [**PIN_VERSION**] # 
+
 ​    [**AS** *target_name*]
+
 ​    [**SHA512** *checksum*] 
+
 ​    [**LICENSE_FILE** *path*] # Specify the license file provided by the dependency
+
 ​    [**URL** *url*]
+
 ​    [**BASE_DIR** *directory*]
+
 ​    [**INCLUDE_DIRECTORIES** *additional_include_directories...*]
+
 ​    [**DEFINITIONS** *additional_compile_definitions...*]
+
 ​    [**FEATURES** *additional_target_features...*]
+
 ​    [**LINK_LIBRARIES** *additional_link_libraries...*]
+
 ​    [**FILTER** *archive_extraction_file_filter...*]
+
 ​    [**RENAME** *rename_file_assignments...*]
+
 ​    [**PATCH** *patch_files_to_apply...*]
+
 )
 
 #### cfetch_dependency
@@ -121,26 +139,48 @@ Provides header-only dependencies without any compilation involved:
 Provides dependencies that are built in-tree or out-of-tree:
 
 **cfetch_dependency**(
-     "**author/projectname@revision_or_hash**"
-    [**NO_LICENSE_FILE**] # The project does not provide a license file
-    [**EXTERNAL**] # Build the dependency out-of-tree (is built in-tree otherwise).
-    [**NO_FIND_PACKAGE**]
-    [**DRY_RUN**] # Test this command without and modifications on the filesystem
-    [**PIN_VERSION**]
-    [**CD** *arg*]
-    [**AS** *arg*]
-    [**LICENSE_FILE** *path*] # Specify the license file provided by the dependency
-    [**SUBDIRECTORY** *arg*]
-    [**URL** *arg*]
-    [**SHA512** *arg*]
-    [**BASE_DIR** *arg*]
-    [**OPTIONS** *args...*]
-    [**FILTER** *args...*]
-    [**PATCH** *args...*]
-    [**RENAME** *args...*]
-    [**INSTALL_RUNTIME** *args...*]
-    [**CONFIGURATIONS** *args...*]
-    [**TARGETS** *args...*]
-    [**HINTS** *args...*]
+
+​     "**author/projectname@revision_or_hash**"
+
+​    [**NO_LICENSE_FILE**] # The project does not provide a license file
+
+​    [**EXTERNAL**] # Build the dependency out-of-tree (is built in-tree otherwise).
+
+​    [**NO_FIND_PACKAGE**]
+
+​    [**DRY_RUN**] # Test this command without and modifications on the filesystem
+
+​    [**PIN_VERSION**]
+
+​    [**CD** *arg*]
+
+​    [**AS** *arg*]
+
+​    [**LICENSE_FILE** *path*] # Specify the license file provided by the dependency
+
+​    [**SUBDIRECTORY** *arg*]
+
+​    [**URL** *arg*]
+
+​    [**SHA512** *arg*]
+
+​    [**BASE_DIR** *arg*]
+
+​    [**OPTIONS** *args...*]
+
+​    [**FILTER** *args...*]
+
+​    [**PATCH** *args...*]
+
+​    [**RENAME** *args...*]
+
+​    [**INSTALL_RUNTIME** *args...*]
+
+​    [**CONFIGURATIONS** *args...*]
+
+​    [**TARGETS** *args...*]
+
+​    [**HINTS** *args...*]
+
 )
 
