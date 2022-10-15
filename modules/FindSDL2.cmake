@@ -1,0 +1,19 @@
+include(CFetch)
+
+cfetch_dependency(
+  "spurious/SDL-mirror@4a1e49b8b2a238b688aa23a6756914e4b0b1b862"
+  AS
+  "SDL2"
+  LICENSE_FILE
+  "COPYING.txt"
+  OPTIONS
+  BUILD_SHARED_LIBS=ON
+  SDL_SHARED=ON
+  SDL_STATIC=OFF
+  SDL_STATIC_PIC=OFF
+  INSTALL_RUNTIME
+  SDL2::SDL2
+  EXTERNAL
+  CONFIGURATIONS
+  Debug
+  Release)
